@@ -87,7 +87,7 @@ onMounted(async()=>{
 async function requestApi(){
     const res = await request.get('/get-category',{page:page.value})
     console.log(res)
-    tableData.value = res.data.categoryData
+    tableData.value = res.data.categoryDate
     total.value = res.data.total
 }
 // 删除类目
