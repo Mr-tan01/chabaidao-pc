@@ -17,7 +17,7 @@
                 <el-table-column prop="goods_category" label="所属类目"/>
                 <el-table-column prop="goods_price" label="价格" />
                 <el-table-column prop="goods_stock" label="库存" />
-                <el-table-column prop="sales_valume" label="销量" />
+                <el-table-column prop="goods_sales" label="销量" />
                 <el-table-column label="操作">
                     <template #default="scope">
                         <el-button type="danger" size="default" @click="deleteGoods(scope.row._id,scope.$index)">删除</el-button>
