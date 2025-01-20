@@ -11,7 +11,7 @@
                 <el-table :data="tableSelect" style="width: 100%">
                     <el-table-column prop="goods_name" label="商品" />
                     <el-table-column prop="goods_price" label="售价" />
-                    <el-table-column prop="sales_valume" label="销量" />
+                    <el-table-column prop="goods_sales" label="销量" />
                     <el-table-column prop="goods_category" label="所属分类" />
                 </el-table>
             </div>
@@ -19,7 +19,7 @@
             <el-table :data="tableData" style="width: 100%" highlight-current-row @current-change="handleCurrentChange">
                 <el-table-column prop="goods_name" label="商品" />
                 <el-table-column prop="goods_price" label="售价" />
-                <el-table-column prop="sales_valume" label="销量" />
+                <el-table-column prop="goods_sales" label="销量" />
                 <el-table-column prop="goods_category" label="所属分类" />
             </el-table>
         </div>
