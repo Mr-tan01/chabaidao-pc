@@ -6,7 +6,7 @@
 	            <el-table-column prop="orderTime" label="交易时间"/>
 	            <el-table-column label="订单类型">
 					<template #default="{row}">
-					    {{ row.orderType == '001' ? '到店取餐' : '外卖到家' }}
+					    {{ row.orderType == '1' ? '到店取餐' : '外卖到家' }}
 					</template>
 				</el-table-column>
 	            <el-table-column prop="paymentPrice" label="交易金额" />
@@ -82,7 +82,7 @@
 	async function orderDetails(id){
 		const res = await request.get('/receive-order-details',{id})
 		console.log(res)
-		drawerTitle.value = res.data[0].orderType == '001' ? '到店取餐' : '外卖到家'
+		drawerTitle.value = res.data[0].orderType == '1' ? '到店取餐' : '外卖到家'
 		orderData.value = res.data[0].productOrder
 		if(res.data[0].orderType === '001'){
 			orderInfo.value = [
